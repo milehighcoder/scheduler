@@ -1,2 +1,4 @@
-const m = moment();
-console.log(m.format("[Today's date is] dddd, MMMM Do."));
+const m = moment().format("[Today's date is] dddd, MMMM Do.");
+
+//displays current day
+document.getElementById('currentDay').innerHTML = m;

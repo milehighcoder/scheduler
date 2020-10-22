@@ -3,7 +3,7 @@
 ## Acceptance Criteria
 
 #1 Current day is displayed in the currentDay container at the top of the scheduler
-Use MomentJS to display the current day time.
+DONE Use MomentJS to display the current day time.
 
 #2 In the time blocks, standard business hours are displayed (9am-5pm)
 
