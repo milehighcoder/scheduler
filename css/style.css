@@ -15,15 +15,21 @@ textarea {
 
 .jumbotron {
   text-align: center;
-  background-color: transparent;
-  color: black;
+  font-family: A Pompadour Sample;
+  background-color:  #383d45;
+  color: white;
   border-radius: 0;
   border-bottom: 10px solid black;
+}
+
+.jumbotron p {
+  font-family: sans-serif;
 }
 
 .description {
   white-space: pre-wrap;
   width: 75%;
+  height: 100%;
 }
 
 .time-block {
@@ -40,9 +46,8 @@ textarea {
 .hour {
   background-color: #ffffff;
   color: #000000;
-  border-top: 2px dashed #383D45;
-  width: 80px;
-  margin-left: 40px;
+  border-top: 2px dashed #383d45;
+  width: 90px;
 }
 
 .past {
@@ -61,12 +66,16 @@ textarea {
 }
 
 .saveBtn {
-  border-left: 1px solid black;
+  border: none;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #287BFF;
-  color: white;
-  width: 70px;
+  background-color: #287bff;
+  background-image: url(../assets/images/calendar-plus-icon.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 40%;
+  width: 8%;
+  height: 100%;
 }
 
 .saveBtn i:hover {
