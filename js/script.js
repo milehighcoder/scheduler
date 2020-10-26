@@ -1,29 +1,31 @@
-const m = moment().format("dddd, MMMM Do.");
+// const m = moment().format("dddd, MMMM Do.");
+const m = moment();
 
 // displays current day in viewport
-$("#currentDay").html(m); //JS = document.getElementById('currentDay').innerHTML = m;
+$("#currentDay").html(m.format("LLL"));
 
-// 9:00 AM time block
-$("#nine").click(function (event) {
+// 9:00 AM
+$("#9").click(function (event) {
   //prevents the browser from auto refreshing
   event.preventDefault();
   //this defines the id of the button that the user clicked
   var button = $(this).attr("id");
   //this loops through each HTML element that has a class of description
   $(".description").each(function (i, element) {
-    //this checks to see if the button's id matches the textarea's data-hour
+    //this checks to see if the button's id matches the input's data-hour
     if (button === $(element).attr("data-hour")) {
       //when we find that value that matches we set the hour as the key
       var key = $(element).attr("data-hour");
-      // and we set the text of the textarea as the value
+      // and we set the text of the input as the value
       var value = $(element).val();
-      //this will set the key,value pair in local storage
+      //this will set the key and value pair in local storage
       localStorage.setItem(key, value);
     }
   });
 });
 
-$("#ten").click(function (event) {
+// 10:00 AM Time Block
+$("#10").click(function (event) {
   event.preventDefault();
   var button = $(this).attr("id");
   $(".description").each(function (i, element) {
@@ -35,7 +37,8 @@ $("#ten").click(function (event) {
   });
 });
 
-$("#eleven").click(function (event) {
+//11:00 AM Time Block
+$("#11").click(function (event) {
   event.preventDefault();
   var button = $(this).attr("id");
   $(".description").each(function (i, element) {
@@ -47,7 +50,8 @@ $("#eleven").click(function (event) {
   });
 });
 
-$("#twelve").click(function (event) {
+//12:00 PM Time Block
+$("#12").click(function (event) {
   event.preventDefault();
   var button = $(this).attr("id");
   $(".description").each(function (i, element) {
@@ -59,7 +63,8 @@ $("#twelve").click(function (event) {
   });
 });
 
-$("#one").click(function (event) {
+//1:00 PM Time Block
+$("#13").click(function (event) {
   event.preventDefault();
   var button = $(this).attr("id");
   $(".description").each(function (i, element) {
@@ -71,7 +76,8 @@ $("#one").click(function (event) {
   });
 });
 
-$("#two").click(function (event) {
+//2:00 PM Time Block
+$("#14").click(function (event) {
   event.preventDefault();
   var button = $(this).attr("id");
   $(".description").each(function (i, element) {
@@ -83,7 +89,8 @@ $("#two").click(function (event) {
   });
 });
 
-$("#three").click(function (event) {
+//3:00 PM Time Block
+$("#15").click(function (event) {
   event.preventDefault();
   var button = $(this).attr("id");
   $(".description").each(function (i, element) {
@@ -95,7 +102,8 @@ $("#three").click(function (event) {
   });
 });
 
-$("#four").click(function (event) {
+//4:00 PM Time Block
+$("#16").click(function (event) {
   event.preventDefault();
   var button = $(this).attr("id");
   $(".description").each(function (i, element) {
@@ -107,7 +115,8 @@ $("#four").click(function (event) {
   });
 });
 
-$("#five").click(function (event) {
+//5:00 PM Time Block
+$("#17").click(function (event) {
   event.preventDefault();
   var button = $(this).attr("id");
   $(".description").each(function (i, element) {
@@ -120,12 +129,24 @@ $("#five").click(function (event) {
 });
 
 //this will get the hour from local storage if it exists
-$("#nineInputSave").val(localStorage.getItem("nine"));
-$("#tenInputSave").val(localStorage.getItem("ten"));
-$("#elevenInputSave").val(localStorage.getItem("eleven"));
-$("#twelveInputSave").val(localStorage.getItem("twelve"));
-$("#oneInputSave").val(localStorage.getItem("one"));
-$("#twoInputSave").val(localStorage.getItem("two"));
-$("#threeInputSave").val(localStorage.getItem("three"));
-$("#fourInputSave").val(localStorage.getItem("four"));
-$("#fiveInputSave").val(localStorage.getItem("five"));
+$("#nineInputSave").val(localStorage.getItem("9"));
+$("#tenInputSave").val(localStorage.getItem("10"));
+$("#elevenInputSave").val(localStorage.getItem("11"));
+$("#twelveInputSave").val(localStorage.getItem("12"));
+$("#oneInputSave").val(localStorage.getItem("13"));
+$("#twoInputSave").val(localStorage.getItem("14"));
+$("#threeInputSave").val(localStorage.getItem("15"));
+$("#fourInputSave").val(localStorage.getItem("16"));
+$("#fiveInputSave").val(localStorage.getItem("17"));
+
+//this will update the past, present and future time-block colors in real time
+$(".description").each(function (index, value) {
+  var thisHour = $(this).attr("data-hour");
+  if (thisHour < moment().hour()) {
+    $(this).addClass("past"); //gray
+  } else if (thisHour == moment().hour()) {
+    $(this).addClass("present"); //red
+  } else if (thisHour > moment().hour()) {
+    $(this).addClass("future"); //green
+  }
+});

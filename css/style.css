@@ -2,6 +2,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 1;
+  margin-bottom: 30px;
 }
 
 textarea {
@@ -16,10 +17,9 @@ textarea {
 .jumbotron {
   text-align: center;
   font-family: A Pompadour Sample;
-  background-color:  #383d45;
+  background-color: #383d45;
   color: white;
   border-radius: 0;
-  border-bottom: 10px solid black;
 }
 
 .jumbotron p {
@@ -51,17 +51,17 @@ textarea {
 }
 
 .past {
-  background-color: #d3d3d3;
+  background-color: #383d45;
   color: white;
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: #dc3545;
   color: white;
 }
 
 .future {
-  background-color: #77dd77;
+  background-color: #28a745;
   color: white;
 }
 
