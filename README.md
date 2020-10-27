@@ -2,7 +2,7 @@
 
 ## project description
 
-The goal of this project was to create a simple calendar application that allows a user to save work events for each hour of the day by modifying starter code. This app runs in a web browser and features dynamically updated HTML and CSS powered by jQuery. I utilized the [Moment.js](https://momentjs.com/) library to work with the date and time feature located in the Jumbotron. When a time block is in the 'past' it is assigned a color of gray. When a time block is in the 'present' it is assigned a color of red. When a time block is in the 'future' it is assigned a color of green. When a user refreshes the page, the input in a time block (if input exists) persists until the user clears it from the time block OR clears it in localStorage.
+The goal of this project was to create a simple calendar application that allows a user to save work events for each hour of the day by modifying starter code. This app runs in a web browser and features dynamically updated HTML and CSS powered by jQuery. I utilized the [Moment.js](https://momentjs.com/) library to work with the date and time feature located in the Jumbotron. When a time block is in the 'past' it is assigned a color of dark gray. When a time block is in the 'present' it is assigned a color of light gray. When a time block is in the 'future' it is assigned a color of white. When a user refreshes the page, the input in a time block (if input exists) persists until the user clears it from the time block OR clears it in localStorage.
 
 ## challenge - local storage
 
