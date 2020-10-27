@@ -19,28 +19,28 @@ textarea {
   font-family: A Pompadour Sample;
   background-color: #383d45;
   color: white;
-  border-radius: 0;
+}
+
+.jumbotron h1 {
+  font-size: 52px;
 }
 
 .jumbotron p {
   font-family: sans-serif;
+  font-size: 16px;
 }
 
 .description {
   white-space: pre-wrap;
-  width: 65%;
+  width: 70%;
   height: 100%;
-}
-
-.time-block {
-  text-align: center;
-  border-radius: 15px;
+  border: none;
 }
 
 .row {
   white-space: pre-wrap;
   height: 80px;
-  border-top: 1px solid white;
+  border-top: 0.5px solid white;
 }
 
 .hour {
