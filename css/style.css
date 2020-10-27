@@ -83,3 +83,9 @@ textarea {
   margin: 40px;
   transition: all 0.3s ease-in-out;
 }
+
+/* allows custom fonts to display on mobile browsers */
+@font-face {
+  font-family: "A Pompadour Sample";
+  src: url("../assets/fonts/APompadourSample.ttf");
+}
