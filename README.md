@@ -14,10 +14,10 @@ This project provided the opportunity to learn more in-depth about localStorage 
 
 ## URL to deployed application
 
-[Work Day Scheduler](https://mychalgm.github.io/scheduler)<br>
+[Scheduler App](https://mychalgm.github.io/scheduler)<br>
 [Repository](https://github.com/mychalgm/scheduler)
 
-## application screenshots
+## application screenshot
 
 ![alttext](assets/images/screenshot.png "Scheduler Screenshot")
 
