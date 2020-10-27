@@ -5,15 +5,6 @@ body {
   margin-bottom: 30px;
 }
 
-textarea {
-  background: transparent;
-  border: none;
-  resize: none;
-  color: #000000;
-  border-left: 1px solid black;
-  padding: 10px;
-}
-
 .jumbotron {
   text-align: center;
   font-family: A Pompadour Sample;
@@ -33,36 +24,51 @@ textarea {
 .description {
   white-space: pre-wrap;
   width: 70%;
-  height: 100%;
+  height: 90%;
   border: none;
 }
 
 .row {
   white-space: pre-wrap;
-  height: 80px;
-  border-top: 0.5px solid white;
+  height: 70px;
+  font-size: 16px;
 }
 
 .hour {
-  background-color: #ffffff;
-  color: #000000;
-  border-top: 1px dashed #383d45;
-  width: 80px;
+  width: 15%;
+  height: 90%;
+  font-family: sans-serif;
+  color: white;
+  background-color: #287bff;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+time {
+  text-align: center;
+  padding-top: 24px;
+  font-size: 14px;
+  font: #383d45;
 }
 
 .past {
   background-color: #383d45;
-  color: white;
+  color: #a8a8a8;
 }
 
 .present {
-  background-color: #dc3545;
-  color: white;
+  background-color: #d4d4d4;
+  color: #383d45;
+  border-top: solid 0.2px #a8a8a8;
+  border-bottom: solid 0.2px #a8a8a8;
 }
 
 .future {
-  background-color: #28a745;
-  color: white;
+  background-color: white;
+  color: #383d45;
+  border-top: solid 0.2px;
+  border-bottom: solid 0.2px;
+  border-color: #cacaca;
 }
 
 .saveBtn {
@@ -73,15 +79,9 @@ textarea {
   background-image: url(../assets/images/calendar-plus-icon.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 40%;
-  width: 8%;
-  height: 100%;
-}
-
-.saveBtn i:hover {
-  font-size: 20px;
-  margin: 40px;
-  transition: all 0.3s ease-in-out;
+  background-size: 30%;
+  width: 15%;
+  height: 90%;
 }
 
 /* allows custom fonts to display on mobile browsers */
