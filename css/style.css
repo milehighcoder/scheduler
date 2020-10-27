@@ -12,8 +12,8 @@ body {
   background-color: #383d45;
   color: white;
   border-bottom: solid 1px #696969;
-  padding: 30px;
-  margin-bottom: 35px;
+  padding: 25px;
+  margin-bottom: 45px;
 }
 
 .jumbotron h1 {
@@ -25,18 +25,26 @@ body {
   font-size: 16px;
 }
 
+.jumbotron h2 {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+}
+
 .description {
   white-space: pre-wrap;
   width: 70%;
   height: 90%;
   border: none;
   border-radius: none;
+  padding-left: 10px;
 }
 
 .row {
   white-space: pre-wrap;
   height: 70px;
   font-size: 16px;
+  font-family: sans-serif;
 }
 
 .hour {
@@ -59,12 +67,12 @@ time {
 .past {
   background-color: #383d45;
   color: #a8a8a8;
-  border-top: solid 0.2px #696969;
-  border-bottom: solid 0.2px #696969;
+  border-top: solid 0.5px #696969;
+  border-bottom: solid 0.5px #696969;
 }
 
 .present {
-  background-color: #dadada;
+  background-color: #e0e0e0;
   color: #383d45;
   border-top: solid 0.2px #a8a8a8;
   border-bottom: solid 0.2px #a8a8a8;

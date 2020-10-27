@@ -2,7 +2,7 @@
 const m = moment();
 
 // displays current day in viewport
-$("#currentDay").html(m.format("LLL"));
+$("#currentDay").html(m.format('ddd MMM do hh:mm a'));
 
 // 9:00 AM
 $("#9").click(function (event) {
